@@ -45,7 +45,7 @@ namespace CalculadoraIMC
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 29);
+            this.label1.Location = new System.Drawing.Point(20, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(246, 31);
             this.label1.TabIndex = 0;
@@ -65,7 +65,7 @@ namespace CalculadoraIMC
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 108);
+            this.label3.Location = new System.Drawing.Point(9, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(141, 17);
             this.label3.TabIndex = 2;
@@ -83,65 +83,78 @@ namespace CalculadoraIMC
             // 
             // txtAltura
             // 
+            this.txtAltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAltura.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.txtAltura.Location = new System.Drawing.Point(156, 108);
             this.txtAltura.Name = "txtAltura";
-            this.txtAltura.Size = new System.Drawing.Size(100, 20);
+            this.txtAltura.Size = new System.Drawing.Size(100, 22);
             this.txtAltura.TabIndex = 4;
             // 
             // txtPeso
             // 
+            this.txtPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPeso.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.txtPeso.Location = new System.Drawing.Point(156, 143);
             this.txtPeso.Name = "txtPeso";
-            this.txtPeso.Size = new System.Drawing.Size(100, 20);
+            this.txtPeso.Size = new System.Drawing.Size(100, 22);
             this.txtPeso.TabIndex = 5;
             // 
             // txtImc
             // 
+            this.txtImc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtImc.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.txtImc.Location = new System.Drawing.Point(156, 181);
             this.txtImc.Name = "txtImc";
-            this.txtImc.Size = new System.Drawing.Size(100, 20);
+            this.txtImc.Size = new System.Drawing.Size(100, 22);
             this.txtImc.TabIndex = 6;
             // 
             // btnReset
             // 
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReset.Font = new System.Drawing.Font("Lucida Fax", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(13, 335);
+            this.btnReset.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Location = new System.Drawing.Point(7, 335);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 39);
+            this.btnReset.Size = new System.Drawing.Size(87, 39);
             this.btnReset.TabIndex = 7;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnCalcular
             // 
             this.btnCalcular.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnCalcular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalcular.Font = new System.Drawing.Font("Lucida Fax", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(106, 335);
+            this.btnCalcular.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Location = new System.Drawing.Point(100, 335);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(75, 39);
+            this.btnCalcular.Size = new System.Drawing.Size(87, 39);
             this.btnCalcular.TabIndex = 8;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // btnFechar
             // 
             this.btnFechar.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnFechar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFechar.Font = new System.Drawing.Font("Lucida Fax", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFechar.Location = new System.Drawing.Point(199, 335);
+            this.btnFechar.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.Location = new System.Drawing.Point(193, 335);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(75, 39);
+            this.btnFechar.Size = new System.Drawing.Size(87, 39);
             this.btnFechar.TabIndex = 9;
             this.btnFechar.Text = "Sair";
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(286, 410);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.btnCalcular);
@@ -153,6 +166,7 @@ namespace CalculadoraIMC
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Indice de massa corporal";
