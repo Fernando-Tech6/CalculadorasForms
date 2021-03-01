@@ -39,6 +39,8 @@ namespace CalculadoraIMC
             this.btnReset = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -150,12 +152,25 @@ namespace CalculadoraIMC
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = global::CalculadoraIMC.Properties.Resources.iStock_543654860;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 221);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(230, 108);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(286, 410);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.btnReset);
@@ -170,6 +185,7 @@ namespace CalculadoraIMC
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Indice de massa corporal";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,6 +203,7 @@ namespace CalculadoraIMC
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Button btnFechar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
