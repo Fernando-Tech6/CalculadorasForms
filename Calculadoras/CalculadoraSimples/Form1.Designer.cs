@@ -186,6 +186,7 @@ namespace CalculadoraSimples
             this.BtnClear.TabIndex = 11;
             this.BtnClear.Text = "Clear";
             this.BtnClear.UseVisualStyleBackColor = true;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // BtnOff
             // 
@@ -197,6 +198,7 @@ namespace CalculadoraSimples
             this.BtnOff.TabIndex = 12;
             this.BtnOff.Text = "Off";
             this.BtnOff.UseVisualStyleBackColor = true;
+            this.BtnOff.Click += new System.EventHandler(this.BtnOff_Click);
             // 
             // Form1
             // 
